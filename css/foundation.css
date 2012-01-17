@@ -9,15 +9,17 @@
 :: Tables
 :: Misc
 */
-/*	--------------------------------------------------
-	:: Global Reset & Standards
-	-------------------------------------------------- */
+/* Variables
+-------------------------------------------------- */
+/*    --------------------------------------------------
+    :: Global Reset & Standards
+    -------------------------------------------------- */
 /* 
-		Eric Meyer's CSS Reset
-		http://meyerweb.com/eric/tools/css/reset/ 
-		v2.0 | 20110126
-   		License: none (public domain)
-	*/
+        Eric Meyer's CSS Reset
+        http://meyerweb.com/eric/tools/css/reset/ 
+        v2.0 | 20110126
+           License: none (public domain)
+    */
 html,
 body,
 div,
@@ -151,9 +153,9 @@ body {
   position: relative;
   -webkit-font-smoothing: antialiased;
 }
-/*	--------------------------------------------------
-	:: Links
-	-------------------------------------------------- */
+/*    --------------------------------------------------
+    :: Links
+    -------------------------------------------------- */
 a {
   color: #2a85e8;
   text-decoration: none;
@@ -163,15 +165,15 @@ a:hover {
   color: #11639d;
 }
 a:focus {
-  color: #cc4714;
+  color: cc 4714;
   outline: none;
 }
 p a, p a:visited {
   line-height: inherit;
 }
-/*	--------------------------------------------------
-	:: Lists
-	-------------------------------------------------- */
+/*    --------------------------------------------------
+    :: Lists
+    -------------------------------------------------- */
 ul, ol {
   margin-bottom: 18px;
 }
@@ -202,13 +204,13 @@ li {
 ul.large li {
   line-height: 21px;
 }
-/*	--------------------------------------------------
-	:: Tables
-	-------------------------------------------------- */
+/*    --------------------------------------------------
+    :: Tables
+    -------------------------------------------------- */
 table {
   background: #fff;
-  -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
   border-radius: 3px;
   margin: 0 0 18px;
   border: 1px solid #ddd;
@@ -250,7 +252,7 @@ table tbody tr td {
   border: none;
 }
 /* -------------------------------------------------- 
-	:: Misc
+    :: Misc
 ---------------------------------------------------*/
 .left {
   float: left;
@@ -262,12 +264,12 @@ table tbody tr td {
   display: none;
 }
 .highlight {
-  background: #ff0;
+  background: #ffff00;
 }
 /* Arfully Masterminded by ZURB */
-/*	--------------------------------------------------
+/*    --------------------------------------------------
     :: Typography
-	-------------------------------------------------- */
+    -------------------------------------------------- */
 h1,
 h2,
 h3,
@@ -351,9 +353,9 @@ h2 small,
 h3 small,
 h4 small,
 h5 small {
-  color: #777;
+  color: #777777;
 }
-/*	Blockquotes  */
+/*    Blockquotes  */
 blockquote, blockquote p {
   line-height: 20px;
   color: #777;
@@ -373,7 +375,7 @@ blockquote cite:before {
   content: "\2014 \0020";
 }
 blockquote cite a, blockquote cite a:visited {
-  color: #555;
+  color: #555555;
 }
 hr {
   border: solid #ddd;
@@ -393,11 +395,11 @@ abbr {
   text-transform: none;
 }
 /**
- 	 * Print styles.
-	 *
-	 * Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
-	 * Credit to Paul Irish and HTML5 Boilerplate (html5boilerplate.com)
-	 */
+      * Print styles.
+     *
+     * Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
+     * Credit to Paul Irish and HTML5 Boilerplate (html5boilerplate.com)
+     */
 .print-only {
   display: none !important;
 }
@@ -435,31 +437,15 @@ abbr {
   tr, img {
     page-break-inside: avoid;
   }
-  @page  {
-    margin: 0.5cm;
-  }
-  p, h2, h3 {
-    orphans: 3;
-    widows: 3;
-  }
-  h2, h3 {
-    page-break-after: avoid;
-  }
-  .hide-on-print {
-    display: none !important;
-  }
-  .print-only {
-    display: block !important;
-  }
 }
 /* Arfully Masterminded by ZURB */
 /* --------------------------------------------------
-	:: Grid
-	
-	This is the mobile-friendly, responsive grid that
-	lets Foundation work much of its magic.
-	
-	-------------------------------------------------- */
+    :: Grid
+    
+    This is the mobile-friendly, responsive grid that
+    lets Foundation work much of its magic.
+    
+    -------------------------------------------------- */
 .container {
   padding: 0 20px;
 }
@@ -540,7 +526,7 @@ abbr {
   margin-left: 65.3%;
 }
 .row .offset-by-eight {
-  margin-left: 74.0%;
+  margin-left: 74%;
 }
 .row .offset-by-nine {
   margin-left: 82.7%;
@@ -661,19 +647,19 @@ img {
 .row, .clearfix {
   zoom: 1;
 }
-/*	--------------------------------------------------
-	:: Block grids
-	
-	These are 2-up, 3-up, 4-up and 5-up ULs, suited
-	for repeating blocks of content. Add 'mobile' to
-	them to switch them just like the layout grid
-	(one item per line) on phones
-	
-	For IE7/8 compatibility block-grid items need to be
-	the same height. You can optionally uncomment the
-	lines below to support arbitrary height, but know
-	that IE7/8 do not support :nth-child.
-	-------------------------------------------------- */
+/*    --------------------------------------------------
+    :: Block grids
+    
+    These are 2-up, 3-up, 4-up and 5-up ULs, suited
+    for repeating blocks of content. Add 'mobile' to
+    them to switch them just like the layout grid
+    (one item per line) on phones
+    
+    For IE7/8 compatibility block-grid items need to be
+    the same height. You can optionally uncomment the
+    lines below to support arbitrary height, but know
+    that IE7/8 do not support :nth-child.
+    -------------------------------------------------- */
 .block-grid {
   display: block;
   overflow: hidden;
@@ -690,7 +676,7 @@ img {
   margin-left: 4%;
   width: 46%;
 }
-/* 	.block-grid.two-up>li:nth-child(2n+1) {clear: left;} */
+/*     .block-grid.two-up>li:nth-child(2n+1) {clear: left;} _NO__DOTCOMMA__AFTER__*/
 .block-grid.three-up {
   margin-left: -2%;
 }
@@ -698,7 +684,7 @@ img {
   margin-left: 2%;
   width: 31.3%;
 }
-/* 	.block-grid.three-up>li:nth-child(3n+1) {clear: left;} */
+/*     .block-grid.three-up>li:nth-child(3n+1) {clear: left;} _NO__DOTCOMMA__AFTER__*/
 .block-grid.four-up {
   margin-left: -2%;
 }
@@ -706,7 +692,7 @@ img {
   margin-left: 2%;
   width: 23%;
 }
-/* 	.block-grid.four-up>li:nth-child(4n+1) {clear: left;} */
+/*     .block-grid.four-up>li:nth-child(4n+1) {clear: left;} _NO__DOTCOMMA__AFTER__*/
 .block-grid.five-up {
   margin-left: -1.5%;
 }
@@ -714,7 +700,7 @@ img {
   margin-left: 1.5%;
   width: 18.5%;
 }
-/* 	.block-grid.five-up>li:nth-child(5n+1) {clear: left;} */
+/*     .block-grid.five-up>li:nth-child(5n+1) {clear: left;} _NO__DOTCOMMA__AFTER__*/
 /* Artfully masterminded by ZURB  */
 /* --------------------------------------------------
    Table of Contents
@@ -730,11 +716,11 @@ img {
 :: Video
 :: Microformats
 */
-/*	--------------------------------------------------
-	Buttons
-	-------------------------------------------------- */
+/*    --------------------------------------------------
+    Buttons
+    -------------------------------------------------- */
 .button {
-  background: #00a6fc;
+  background: #575757;
   display: inline-block;
   text-align: center;
   padding: 9px 34px 11px;
@@ -752,25 +738,28 @@ input[type=submit].button {
   -webkit-appearance: none;
 }
 .button.nice {
-  background: #00a6fc url(../images/misc/button-gloss.png) repeat-x 0 -34px;
-  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  background: #575757 url(../images/misc/button-gloss.png) repeat-x 0 -34px;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  -webkit-text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.28);
+  -moz-text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.28);
   text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.28);
-  background: #00a6fc url(../images/misc/button-gloss.png) repeat-x 0 -34px, -moz-linear-gradient(top, rgba(255, 255, 255, 0.4) 0%, transparent 100%);
-  background: #00a6fc url(../images/misc/button-gloss.png) repeat-x 0 -34px, -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.4)), color-stop(100%, transparent));
-  border: 1px solid #0593dc;
+  background: #575757 url(../images/misc/button-gloss.png) repeat-x 0 -34px, -moz-linear-gradient(top, rgba(255, 255, 255, 0.4) 0%, transparent 100%);
+  background: #575757 url(../images/misc/button-gloss.png) repeat-x 0 -34px, -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.4)), color-stop(100%, transparent));
+  border: 1px solid #3e3e3e;
   -webkit-transition: background-color 0.15s ease-in-out;
   -moz-transition: background-color 0.15s ease-in-out;
   -o-transition: background-color 0.15s ease-in-out;
 }
 .button.radius {
-  -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
   border-radius: 3px;
 }
 .button.round {
-  -moz-border-radius: 1000px;
   -webkit-border-radius: 1000px;
+  -moz-border-radius: 1000px;
   border-radius: 1000px;
 }
 .button.full-width {
@@ -807,7 +796,7 @@ input[type=submit].button {
 }
 /* Colors ---------- */
 .blue.button {
-  background-color: #00a6fc;
+  background-color: #575757;
 }
 .red.button {
   background-color: #e91c21;
@@ -821,44 +810,47 @@ input[type=submit].button {
 }
 /* Nice Colors ---------- */
 .nice.blue.button {
-  border: 1px solid #0593dc;
+  border: 1px solid #3e3e3e;
 }
 .nice.red.button {
-  border: 1px solid #b90b0b;
+  border: 1px solid #bf1317;
 }
 .nice.white.button {
-  border: 1px solid #cacaca;
+  border: 1px solid #d0d0d0;
   text-shadow: none !important;
 }
 .nice.black.button {
-  border: 1px solid #000;
+  border: 1px solid #000000;
 }
 /* Hovers ---------- */
 .button:hover, .button:focus {
-  background-color: #0192dd;
+  background-color: #4a4a4a;
   color: #fff;
 }
 .blue.button:hover, .blue.button:focus {
-  background-color: #0192dd;
+  background-color: #4a4a4a;
 }
 .red.button:hover, .red.button:focus {
-  background-color: #d01217;
+  background-color: #d7151a;
 }
 .white.button:hover, .white.button:focus {
-  background-color: #dadada;
+  background-color: #dcdcdc;
   color: #333;
 }
 .black.button:hover, .black.button:focus {
-  background-color: #000;
+  background-color: #070707;
 }
 /* Disabled ---------- */
 .button.disabled, .button[disabled] {
+  filter: alpha(opacity=60);
+  -khtml-opacity: 0.6;
+  -moz-opacity: 0.6;
   opacity: 0.6;
   cursor: default;
 }
-/*	--------------------------------------------------
-	Alerts
-	-------------------------------------------------- */
+/*    --------------------------------------------------
+    Alerts
+    -------------------------------------------------- */
 div.alert-box {
   display: block;
   padding: 6px 7px;
@@ -867,25 +859,33 @@ div.alert-box {
   background: #eee;
   border: 1px solid rgba(0, 0, 0, 0.1);
   margin-bottom: 12px;
-  border-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-text-shadow: 0 1px rgba(255, 255, 255, 0.9);
+  -moz-text-shadow: 0 1px rgba(255, 255, 255, 0.9);
   text-shadow: 0 1px rgba(255, 255, 255, 0.9);
   position: relative;
 }
 .alert-box.success {
   background-color: #7fae00;
   color: #fff;
+  -webkit-text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
+  -moz-text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
   text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
 }
 .alert-box.warning {
   background-color: #c08c00;
   color: #fff;
+  -webkit-text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
+  -moz-text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
   text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
 }
 .alert-box.error {
   background-color: #c00000;
   color: #fff;
+  -webkit-text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
+  -moz-text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
   text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
 }
 .alert-box a.close {
@@ -894,10 +894,16 @@ div.alert-box {
   right: 4px;
   top: 0;
   font-size: 18px;
+  filter: alpha(opacity=20);
+  -khtml-opacity: 0.2;
+  -moz-opacity: 0.2;
   opacity: 0.2;
   padding: 4px;
 }
 .alert-box a.close:hover, .alert-box a.close:focus {
+  filter: alpha(opacity=40);
+  -khtml-opacity: 0.4;
+  -moz-opacity: 0.4;
   opacity: 0.4;
 }
 /*    --------------------------------------------------
@@ -967,7 +973,7 @@ dl.tabs dd a.active {
   background: #fff;
   border-left: 1px solid #eee;
   border-right: 1px solid #eee;
-  border-top: 3px solid #00a6fc;
+  border-top: 3px solid #575757;
   margin: 0 10px;
   position: relative;
   top: -5px;
@@ -1019,7 +1025,7 @@ dl.tabs.vertical dd a.active {
 }
 .nice.tabs.vertical dd a.active {
   border: none;
-  background: #00a6fc;
+  background: #575757;
   color: #fff;
   margin: 0;
   position: static;
@@ -1057,7 +1063,7 @@ ul.contained.tabs-content > li {
   border-width: 0 1px 1px 1px;
 }
 ul.nice.contained.tabs-content > li {
-  border-color: #eee;
+  border-color: #eeeeee;
 }
 /*  --------------------------------------------------
     Pagination
@@ -1081,7 +1087,7 @@ ul.pagination li a {
   color: #555;
 }
 ul.pagination li.current a, ul.pagination li:hover a, ul.pagination li a:focus {
-  border-bottom: solid 2px #00a6fc;
+  border-bottom: solid 2px #575757;
   color: #141414;
 }
 ul.pagination li.unavailable a {
@@ -1108,22 +1114,22 @@ ul.nice li span.bullet, ol.nice li span.number {
   top: 0;
   color: #ccc;
 }
-/*	--------------------------------------------------
-	Panels
-	-------------------------------------------------- */
+/*    --------------------------------------------------
+    Panels
+    -------------------------------------------------- */
 div.panel {
   padding: 20px 20px 2px 20px;
   background: #efefef;
   background: -moz-linear-gradient(top, #ffffff 0%, #f4f4f4 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #f4f4f4));
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
   margin: 0 0 20px 0;
 }
-/*	--------------------------------------------------
-   	Nav Bar with Dropdowns
-	-------------------------------------------------- */
+/*    --------------------------------------------------
+       Nav Bar with Dropdowns
+    -------------------------------------------------- */
 .nav-bar {
   height: 45px;
   background: #fff;
@@ -1209,10 +1215,10 @@ div.panel {
 .nav-bar > li:hover .flyout {
   display: block;
 }
-/*	--------------------------------------------------
-   	Video
-   	Mad props to http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/
-	-------------------------------------------------- */
+/*    --------------------------------------------------
+       Video
+       Mad props to http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/
+    -------------------------------------------------- */
 .flex-video {
   position: relative;
   padding-top: 25px;
@@ -1234,9 +1240,9 @@ div.panel {
   width: 100%;
   height: 100%;
 }
-/*	--------------------------------------------------
-   	Microformats
-	-------------------------------------------------- */
+/*    --------------------------------------------------
+       Microformats
+    -------------------------------------------------- */
 /* hCard */
 ul.vcard {
   display: inline-block;
@@ -1263,8 +1269,8 @@ p.vevent abbr {
   border: none;
   padding: 0 1px;
 }
-/* 	Artfully masterminded by ZURB  
-	Make sure to include app.js / foundation.js if you are going to use inline label inputs 
+/*     Artfully masterminded by ZURB  
+    Make sure to include app.js / foundation.js if you are going to use inline label inputs 
 */
 /* -----------------------------------------
    Standard Forms
@@ -1312,7 +1318,7 @@ input.input-text:focus, textarea:focus {
 }
 /* Inlined Label Style */
 input.placeholder, textarea.placeholder {
-  color: #888;
+  color: #888888;
 }
 /* Text input and textarea sizes */
 input.input-text, textarea {
@@ -1345,7 +1351,7 @@ form fieldset {
   background-color: rgba(255, 0, 0, 0.15);
 }
 .form-field.error label, label.red {
-  color: #C00000;
+  color: #c00000;
 }
 .form-field.error small, small.error {
   margin-top: -6px;
@@ -1365,13 +1371,13 @@ form fieldset {
   width: 440px;
 }
 /* -----------------------------------------
-	   Nicer Forms
-	----------------------------------------- */
+       Nicer Forms
+    ----------------------------------------- */
 form.nice div.form-field input, form.nice input.input-text, form.nice textarea {
   border: solid 1px #bbb;
-  border-radius: 2px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
+  border-radius: 2px;
 }
 form.nice div.form-field input, form.nice input.input-text, form.nice textarea {
   font-size: 13px;
@@ -1383,9 +1389,9 @@ form.nice div.form-field input:focus, form.nice input.input-text:focus, form.nic
   background-color: #f9f9f9;
 }
 form.nice fieldset {
-  border-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
+  border-radius: 3px;
 }
 form.nice div.form-field input[type=radio], form.nice div.form-field input[type=checkbox] {
   display: inline;
@@ -1418,8 +1424,8 @@ form.nice div.form-field.error .large + small, form.nice .large + small.error {
   width: 432px;
 }
 /* -----------------------------------------
-	   Custom Forms
-	----------------------------------------- */
+       Custom Forms
+    ----------------------------------------- */
 form.custom span.custom {
   display: inline-block;
   width: 14px;
@@ -1430,9 +1436,9 @@ form.custom span.custom {
   background: url(../images/misc/custom-form-sprites.png) 0 0 no-repeat;
 }
 form.custom span.custom.radio {
-  border-radius: 7px;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
+  border-radius: 7px;
 }
 form.custom span.custom.radio.checked {
   background-position: 0 -14px;
@@ -1543,6 +1549,7 @@ div.orbit > img {
   top: 0;
   left: 0;
   /* display: none; */
+
 }
 div.orbit > a {
   border: none;
@@ -1569,7 +1576,10 @@ div.timer {
   position: absolute;
   top: 10px;
   right: 10px;
-  opacity: .6;
+  filter: alpha(opacity=60);
+  -khtml-opacity: 0.6;
+  -moz-opacity: 0.6;
+  opacity: 0.6;
   cursor: pointer;
   z-index: 1001;
 }
@@ -1610,12 +1620,18 @@ span.pause {
   left: 0;
   background: url(../images/orbit/pause-black.png) no-repeat;
   z-index: 4;
+  filter: alpha(opacity=0);
+  -khtml-opacity: 0;
+  -moz-opacity: 0;
   opacity: 0;
 }
 span.pause.active {
   background: url(../images/orbit/pause-black.png) no-repeat 0 -40px;
 }
 div.timer:hover span.pause, span.pause.active {
+  filter: alpha(opacity=100);
+  -khtml-opacity: 1;
+  -moz-opacity: 1;
   opacity: 1;
 }
 /* CAPTIONS
@@ -1739,9 +1755,9 @@ div.slider-nav span.left {
   background-position: 0 0;
   border-top: 2px solid #000;
 }
-/*	--------------------------------------------------
-	Reveal Modals
-	-------------------------------------------------- */
+/*    --------------------------------------------------
+    Reveal Modals
+    -------------------------------------------------- */
 .reveal-modal-bg {
   position: fixed;
   height: 100%;
@@ -1762,11 +1778,11 @@ div.slider-nav span.left {
   position: absolute;
   z-index: 2001;
   padding: 30px 40px 34px;
-  -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   border-radius: 5px;
-  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 .reveal-modal.small {
@@ -1792,6 +1808,8 @@ div.slider-nav span.left {
   top: 8px;
   right: 11px;
   color: #aaa;
+  -webkit-text-shadow: 0 -1px 1px rbga(0, 0, 0, 0.6);
+  -moz-text-shadow: 0 -1px 1px rbga(0, 0, 0, 0.6);
   text-shadow: 0 -1px 1px rbga(0, 0, 0, 0.6);
   font-weight: bold;
   cursor: pointer;
@@ -1835,24 +1853,32 @@ div.slider-nav span.left {
   }
 }
 /*
-			
-	NOTES
-	
-	Close button entity is &#215;
-	
-	Example markup
-	
-	<div id="myModal" class="reveal-modal">
-		<h2>Awesome. I have it.</h2>
-		<p class="lead">Your couch.  I it's mine.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices aliquet placerat. Duis pulvinar orci et nisi euismod vitae tempus lorem consectetur. Duis at magna quis turpis mattis venenatis eget id diam. </p>
-		<a class="close-reveal-modal">&#215;</a>
-	</div>
-	
-	*/
+            
+    NOTES
+    
+    Close button entity is ×
+    
+    Example markup
+    
+    
+
+        
+Awesome. I have it.
+
+        
+Your couch.  I it's mine.
+
+        
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices aliquet placerat. Duis pulvinar orci et nisi euismod vitae tempus lorem consectetur. Duis at magna quis turpis mattis venenatis eget id diam. 
+
+        ×
+    
+
+    
+    */
 /* --------------------------------------------------
-	:: Typography
-	-------------------------------------------------- */
+    :: Typography
+    -------------------------------------------------- */
 @media handheld, only screen and (max-width: 767px) {
   h1 {
     font-size: 32px;
@@ -1891,8 +1917,8 @@ div.slider-nav span.left {
   }
 }
 /* --------------------------------------------------
-	:: Grid
-	-------------------------------------------------- */
+    :: Grid
+    -------------------------------------------------- */
 /* Tablet screens */
 @media only screen and (device-width: 768px), (device-width: 800px) {
   /* Currently unused */
@@ -2025,8 +2051,9 @@ div.slider-nav span.left {
   }
 }
 /* --------------------------------------------------
-	:: Block Grids
-	-------------------------------------------------- */@media only screen and (max-width: 767px) {
+    :: Block Grids
+    -------------------------------------------------- */
+@media only screen and (max-width: 767px) {
   .block-grid.mobile {
     margin-left: 0;
   }
@@ -2037,7 +2064,7 @@ div.slider-nav span.left {
   }
 }
 /* -------------------------------------------------- 
-	:: Mobile Visibility Affordances
+    :: Mobile Visibility Affordances
 ---------------------------------------------------*/
 .show-on-phones {
   display: none !important;
@@ -2098,7 +2125,7 @@ div.slider-nav span.left {
   }
 }
 /* only screen and (device-width: 1280px), only screen and (max-device-width: 1280px),  /*
-	/* Keeping this in as a reminder to address support for other tablet devices like the Xoom in the future */
+    /* Keeping this in as a reminder to address support for other tablet devices like the Xoom in the future */
 /* Specific overrides for elements that require something other than display: block */
 table.show-on-desktops {
   display: table !important;
@@ -2132,8 +2159,9 @@ table.hide-on-tablets {
   }
 }
 /* -------------------------------------------------- 
-	:: Forms
----------------------------------------------------*/@media only screen and (max-width: 767px) {
+    :: Forms
+---------------------------------------------------*/
+@media only screen and (max-width: 767px) {
   div.form-field input,
   div.form-field input.small,
   div.form-field input.medium,
@@ -2176,8 +2204,9 @@ table.hide-on-tablets {
   }
 }
 /* -------------------------------------------------- 
-	:: UI
----------------------------------------------------*//* Buttons */
+    :: UI
+---------------------------------------------------*/
+/* Buttons */
 @media only screen and (max-width: 767px) {
   .button {
     display: block;
@@ -2235,7 +2264,7 @@ table.hide-on-tablets {
   }
   .nice.tabs.mobile dd a.active {
     border: none;
-    background: #00a6fc;
+    background: #575757;
     color: #fff;
     margin: 0;
     position: static;
@@ -2313,3 +2342,12 @@ table.hide-on-tablets {
     padding-top: 0;
   }
 }
+/********** Preboot **********/
+/*
+ * @package: Preboot
+ * @module: Global Mixins
+ * @author: Mark Dotto (@mdo)
+ * @see: http://markdotto.com/bootstrap/
+ * @description: file holding the global mixins for CSS3 styles. (few changes and additions)
+ * @note: comments have been removed, read @see for explanations/information
+ */
