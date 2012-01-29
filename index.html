@@ -14,7 +14,7 @@
 	<title>Welcome to Foundation</title>
   
 	<!-- Included CSS Files -->
-	<link rel="stylesheet" href="css/foundation.min.css">
+	<link rel="stylesheet" href="css/foundationless.min.css">
 	<link rel="stylesheet" href="css/app.css">
 
 
@@ -26,563 +26,522 @@
 </head>
 <body>
 
-	<!-- container -->
 	<div class="container">
-		
-		
-		<!-- Grid -->
-		<div class="row">
-			<div class="twelve columns">
-							<h3>The Grid</h3>
-							<h4 class="subheader">The Grid lets you quickly put together page layouts for mobile devices and the desktop. You don't need two different sites - the Grid is built to create a rock-solid experience on all kinds of devices with the exact same markup.</h4>
-
-							<hr>
-
-							<h4>The Basics</h4>
-							<p>The grid is built around three key elements: containers, rows, and columns. Containers create base padding for the page; rows create a max-width and contain the columns; and columns create the final structure. Everything on your page that you don't give a specific structural style to should be within a container, row and column.</p>
-
-							<p>What you need to know is that <strong>columns don't have a fixed width:</strong> they can vary based on the resolution of the screen, or the size of the window (try scaling down this window to see what we mean). Design with that in mind.</p>
-							<script src="http://snipt.net/embed/3b3c66062f90d4cdf9d5e1f7b61c8ce8"></script><div onmouseover="document.getElementById('snipt-26807').style.display = 'block'; return false;" onmouseout="document.getElementById('snipt-26807').style.display = 'none'; return false;" style="position: relative;">
-			<div class="highlight" style="background: #202020"><pre style="-moz-border-radius: 5px; border-radius: 5px; -webkit-border-radius: 5px; margin: 0; display: block; font: 11px Monaco, monospace !important; padding: 15px; background-color: #1C1C1C; overflow: auto; color: #D0D0D0;; line-height: 125%"><span style="color: #6ab825; font-weight: normal">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">"container"</span><span style="color: #6ab825; font-weight: normal">&gt;</span>
-			  <span style="color: #6ab825; font-weight: normal">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">"row"</span><span style="color: #6ab825; font-weight: normal">&gt;</span>
-			    <span style="color: #6ab825; font-weight: normal">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">"eight columns"</span><span style="color: #6ab825; font-weight: normal">&gt;</span>
-			      Eight columns
-			    <span style="color: #6ab825; font-weight: normal">&lt;/div&gt;</span>
-			    <span style="color: #6ab825; font-weight: normal">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">"four columns"</span><span style="color: #6ab825; font-weight: normal">&gt;</span>
-			      Four columns					
-			    <span style="color: #6ab825; font-weight: normal">&lt;/div&gt;</span>
-			  <span style="color: #6ab825; font-weight: normal">&lt;/div&gt;</span>
-			<span style="color: #6ab825; font-weight: normal">&lt;/div&gt;</span>
-			</pre></div>
-
-			<div style="background-color: rgb(17, 17, 17); color: rgb(208, 208, 208); float: right; padding-top: 5px; padding-right: 10px; padding-bottom: 5px; padding-left: 10px; border-top-left-radius: 5px; border-bottom-right-radius: 5px; font: normal normal normal 11px/normal Arial, sans-serif; position: absolute; bottom: 0px; right: 0px; display: none; " id="snipt-26807">code hosted by <a href="http://snipt.net/smileyj68/mobile-grid-example?key=3b3c66062f90d4cdf9d5e1f7b61c8ce8" style="color: #0084FF; text-decoration: none;">snipt.net</a></div>
+	<!-- Grid -->
+	<div class="row">
+		<div class="twelve columns">
+			<h3>
+				The Grid
+			</h3>
+			<h4 class="subheader">
+				The Grid lets you quickly put together page layouts for mobile devices and the desktop. You don't need two different sites - the Grid is built to create a rock-solid experience on all kinds of devices with the exact same markup.
+			</h4>
+			<hr>
+			<h4>
+				The Basics
+			</h4>
+			<p>
+				The grid is built around three key elements: containers, rows, and columns. Containers create base padding for the page; rows create a max-width and contain the columns; and columns create the final structure. Everything on your page that you don't give a specific structural style to should be within a container, row and column.
+			</p>
+			<p>
+				What you need to know is that <strong>columns don't have a fixed width:</strong> they can vary based on the resolution of the screen, or the size of the window (try scaling down this window to see what we mean). Design with that in mind.
+			</p>
+			<hr>
+			<h4>
+				Nesting Support
+			</h4>
+			<p>
+				In the Grid you can nest columns down as far as you'd like. Just embed rows inside columns and go from there. Each embedded row can contain up to 12 columns.
+			</p>
+			<hr>
+			<h4>
+				Examples
+			</h4>
+			<p>
+				Take this page for example - we've set up this page by containing this section in eight columns, and the sidebar in four. When the screen is larger than iPad resolution you'll see them laid out normally - smaller than that and columns become 100% width objects for mobile devices.
+			</p>
+			<p>
+				Below you can see how the rows and columns come together. All columns are inside a row and for this we've colored the rows and columns for visibility. You can also see how nesting works - this example is inside an eight column container, but below we have all 12 columns to use. You can nest them down quite a ways before the percentage widths become absurdly small.
+			</p>
+			<div class="row display">
+				<div class="four columns">
+					.four.columns
+				</div>
+				<div class="four columns">
+					.four.columns
+				</div>
+				<div class="four columns">
+					.four.columns
+				</div>
 			</div>
-
-
-							<hr>
-
-							<h4>Nesting Support</h4>
-							<p>In the Grid you can nest columns down as far as you'd like. Just embed rows inside columns and go from there. Each embedded row can contain up to 12 columns.</p>
-							<script src="http://snipt.net/embed/00599221b2f133b974b012dbe0ed001e"></script><div onmouseover="document.getElementById('snipt-26808').style.display = 'block'; return false;" onmouseout="document.getElementById('snipt-26808').style.display = 'none'; return false;" style="position: relative;">
-			<div class="highlight" style="background: #202020"><pre style="-moz-border-radius: 5px; border-radius: 5px; -webkit-border-radius: 5px; margin: 0; display: block; font: 11px Monaco, monospace !important; padding: 15px; background-color: #1C1C1C; overflow: auto; color: #D0D0D0;; line-height: 125%"><span style="color: #6ab825; font-weight: normal">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">"container"</span><span style="color: #6ab825; font-weight: normal">&gt;</span>
-			  <span style="color: #6ab825; font-weight: normal">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">"row"</span><span style="color: #6ab825; font-weight: normal">&gt;</span>
-			    <span style="color: #6ab825; font-weight: normal">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">"eight columns"</span><span style="color: #6ab825; font-weight: normal">&gt;</span>
-			      <span style="color: #6ab825; font-weight: normal">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">"row"</span><span style="color: #6ab825; font-weight: normal">&gt;</span>
-			        <span style="color: #6ab825; font-weight: normal">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">"six columns"</span><span style="color: #6ab825; font-weight: normal">&gt;</span>
-			          Six columns (nested)
-			        <span style="color: #6ab825; font-weight: normal">&lt;/div&gt;</span>
-			        <span style="color: #6ab825; font-weight: normal">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">"six columns"</span><span style="color: #6ab825; font-weight: normal">&gt;</span>
-			          Six columns (nested)
-			        <span style="color: #6ab825; font-weight: normal">&lt;/div&gt;</span>
-			      <span style="color: #6ab825; font-weight: normal">&lt;/div&gt;</span>
-			    <span style="color: #6ab825; font-weight: normal">&lt;/div&gt;</span>
-			  <span style="color: #6ab825; font-weight: normal">&lt;/div&gt;</span>
-			<span style="color: #6ab825; font-weight: normal">&lt;/div&gt;</span>
-			</pre></div>
-
-			<div style="background-color: rgb(17, 17, 17); color: rgb(208, 208, 208); float: right; padding-top: 5px; padding-right: 10px; padding-bottom: 5px; padding-left: 10px; border-top-left-radius: 5px; border-bottom-right-radius: 5px; font: normal normal normal 11px/normal Arial, sans-serif; position: absolute; bottom: 0px; right: 0px; display: none; " id="snipt-26808">code hosted by <a href="http://snipt.net/smileyj68/mobile-grid-nested?key=00599221b2f133b974b012dbe0ed001e" style="color: #0084FF; text-decoration: none;">snipt.net</a></div>
+			<div class="row display">
+				<div class="three columns">
+					.three.columns
+				</div>
+				<div class="six columns">
+					.six.columns
+				</div>
+				<div class="three columns">
+					.three.columns
+				</div>
 			</div>
-
-
-							<hr>
-
-							<h4>Examples</h4>
-							<p>Take this page for example - we've set up this page by containing this section in eight columns, and the sidebar in four. When the screen is larger than iPad resolution you'll see them laid out normally - smaller than that and columns become 100% width objects for mobile devices.</p>
-
-							<p>Below you can see how the rows and columns come together. All columns are inside a row and for this we've colored the rows and columns for visibility. You can also see how nesting works - this example is inside an eight column container, but below we have all 12 columns to use. You can nest them down quite a ways before the percentage widths become absurdly small.</p>
-
-							<div class="row display">
-								<div class="four columns">
-									.four.columns				
-								</div>
-								<div class="four columns">
-									.four.columns				
-								</div>
-								<div class="four columns">
-									.four.columns				
-								</div>
-							</div>
-							<div class="row display">
-								<div class="three columns">
-									.three.columns				
-								</div>
-								<div class="six columns">
-									.six.columns				
-								</div>
-								<div class="three columns">
-									.three.columns				
-								</div>
-							</div>
-							<div class="row display">
-								<div class="two columns">
-									.two.columns				
-								</div>
-								<div class="eight columns">
-									.eight.columns				
-								</div>
-								<div class="two columns">
-									.two.columns				
-								</div>
-							</div>
-							<div class="row display">
-								<div class="one columns">
-									.one				
-								</div>
-								<div class="eleven columns">
-									.eleven.columns				
-								</div>
-							</div>
-							<div class="row display">
-								<div class="two columns">
-									.two.columns		
-								</div>
-								<div class="ten columns">
-									.ten.columns				
-								</div>
-							</div>
-							<div class="row display">
-								<div class="three columns">
-									.three.columns		
-								</div>
-								<div class="nine columns">
-									.nine.columns				
-								</div>
-							</div>
-							<div class="row display">
-								<div class="four columns">
-									.four.columns			
-								</div>
-								<div class="eight columns">
-									.eight.columns				
-								</div>
-							</div>
-							<div class="row display">
-								<div class="five columns">
-									.five				
-								</div>
-								<div class="seven columns">
-									.seven.columns				
-								</div>
-							</div>
-							<div class="row display">
-								<div class="six columns">
-									.six.columns				
-								</div>
-								<div class="six columns">
-									.six.columns				
-								</div>
-							</div>
-							<div class="row display">
-								<div class="seven columns">
-									.seven.columns				
-								</div>
-								<div class="five columns">
-									.five.columns				
-								</div>
-							</div>
-							<div class="row display">
-								<div class="eight columns">
-									.eight.columns	
-								</div>
-								<div class="four columns">
-									.four.columns				
-								</div>
-							</div>
-							<div class="row display">
-								<div class="nine columns">
-									.nine.columns				
-								</div>
-								<div class="three columns">
-									.three.columns				
-								</div>
-							</div>
-							<div class="row display">
-								<div class="ten columns">
-									.ten.columns				
-								</div>
-								<div class="two columns">
-									.two.columns				
-								</div>
-							</div>
-							<div class="row display">
-								<div class="eleven columns">
-									.eleven.columns				
-								</div>
-								<div class="one columns">
-									.one				
-								</div>
-							</div>
-							<div class="row display">
-								<div class="twelve columns">
-									.twelve.columns				
-								</div>
-							</div>
-
-
-							<hr>
-							<h4>Offsets</h4>
-							<p>Offsets allow you to create additional space between columns in a row. The offsets run from offset-by-one all the way up to offset-by-eleven. Like the rest of the grid they're nestable.</p>
-
-							<div class="row display">
-								<div class="one columns">
-									.one				
-								</div>
-								<div class="eleven columns">
-									.eleven.columns				
-								</div>
-							</div>
-							<div class="row display">
-								<div class="one columns">
-									.one				
-								</div>
-								<div class="ten columns offset-by-one">
-									.ten.columns.offset-by-one			
-								</div>
-							</div>
-							<div class="row display">
-								<div class="one columns">
-									.one				
-								</div>
-								<div class="nine columns offset-by-two">
-									.nine.columns.offset-by-two					
-								</div>
-							</div>
-							<div class="row display">
-								<div class="one columns">
-									.one				
-								</div>
-								<div class="eight columns offset-by-three">
-									.eight.columns.offset-by.three				
-								</div>
-							</div>
-							<div class="row display">
-								<div class="seven columns offset-by-five">
-									.seven.columns.offset-by-five				
-								</div>
-							</div>
-							<div class="row display">
-								<div class="six columns offset-by-six">
-									.six.columns.offset-by-six				
-								</div>
-							</div>
-							<div class="row display">
-								<div class="five columns offset-by-seven">
-									.five.columns.offset-by-six					
-								</div>
-							</div>
-							<div class="row display">
-								<div class="four columns offset-by-eight">
-									.four.columns.offset-by-eight					
-								</div>
-							</div>
-
-							<hr>
-							<h4>Centered Columns</h4>
-							<p>Centered columns are placed in the middle of the row. This does not center their content, but centers the grid element itself. This is a convenient way to make sure a block is centered, even if you change the number of columns it contains. Note: for this to work, there cannot be any other column blocks in the row.</p>
-
-							<div class="row display">
-								<div class="one columns centered">
-									.one.columns.centered				
-								</div>
-							</div>
-							<div class="row display">
-								<div class="two columns centered">
-									.two.columns.centered				
-								</div>
-							</div>
-							<div class="row display">
-								<div class="three columns centered">
-									.three.columns.centered				
-								</div>
-							</div>
-							<div class="row display">
-								<div class="four columns centered">
-									.four.columns.centered				
-								</div>
-							</div>
-							<div class="row display">
-								<div class="five columns centered">
-									.five.columns.centered				
-								</div>
-							</div>
-							<div class="row display">
-								<div class="six columns centered">
-									.six.columns.centered				
-								</div>
-							</div>
-							<div class="row display">
-								<div class="seven columns centered">
-									.seven.columns.centered				
-								</div>
-							</div>
-							<div class="row display">
-								<div class="eight columns centered">
-									.eight.columns.centered				
-								</div>
-							</div>
-							<div class="row display">
-								<div class="nine columns centered">
-									.nine.columns.centered				
-								</div>
-							</div>
-							<div class="row display">
-								<div class="ten columns centered">
-									.ten.columns.centered				
-								</div>
-							</div>
-							<div class="row display">
-								<div class="eleven columns centered">
-									.eleven.columns.centered				
-								</div>
-							</div>
-							<div class="row display">
-								<div class="twelve columns centered">
-									.twelve.columns.centered				
-								</div>
-							</div>
-
-							<hr>
-
-							<h4>Source Ordering</h4>
-							<p>Sometimes within the grid you want the order of your markup to not necessarily be the same as the order items are flowed into the grid. Using these source ordering classes you can shift columns around on desktops and tablets. On phones the grid will still be linearized into the order of the markup.</p>
-
-							<div class="row display">
-								<div class="two columns push-ten">
-									.two.columns		
-								</div>
-								<div class="ten columns pull-two">
-									.ten.columns (last)				
-								</div>
-							</div>
-							<div class="row display">
-								<div class="three columns push-nine">
-									.three.columns		
-								</div>
-								<div class="nine columns pull-three">
-									.nine.columns (last)				
-								</div>
-							</div>
-							<div class="row display">
-								<div class="four columns push-eight">
-									.four.columns			
-								</div>
-								<div class="eight columns pull-four">
-									.eight.columns (last)				
-								</div>
-							</div>
-							<div class="row display">
-								<div class="five columns push-seven">
-									.five				
-								</div>
-								<div class="seven columns pull-five">
-									.seven.columns (last)			
-								</div>
-							</div>
-							<div class="row display">
-								<div class="six columns push-six">
-									.six.columns				
-								</div>
-								<div class="six columns pull-six">
-									.six.columns (last)			
-								</div>
-							</div>
-							<div class="row display">
-								<div class="seven columns push-five">
-									.seven.columns				
-								</div>
-								<div class="five columns pull-seven">
-									.five.columns (last)			
-								</div>
-							</div>
-							<div class="row display">
-								<div class="eight columns push-four">
-									.eight.columns	
-								</div>
-								<div class="four columns pull-eight">
-									.four.columns (last)			
-								</div>
-							</div>
-							<div class="row display">
-								<div class="nine columns push-three">
-									.nine.columns				
-								</div>
-								<div class="three columns pull-nine">
-									.three.columns (last)		
-								</div>
-							</div>
-							<div class="row display">
-								<div class="ten columns push-two">
-									.ten.columns	
-								</div>
-								<div class="two columns pull-ten">
-									.two (last)		
-								</div>
-							</div>
-
-							The syntax supports push and pull for two to ten columns, and is added directly to the columns themselves.
-							<p><script type="text/javascript" src="http://snipt.net/embed/460eb186c71df2e01b381b23423ad0d2"></script></p><div onmouseover="document.getElementById('snipt-33819').style.display = 'block'; return false;" onmouseout="document.getElementById('snipt-33819').style.display = 'none'; return false;" style="position: relative;">
-			<div class="highlight" style="background: #202020"><pre style="-moz-border-radius: 5px; border-radius: 5px; -webkit-border-radius: 5px; margin: 0; display: block; font: 11px Monaco, monospace !important; padding: 15px; background-color: #1C1C1C; overflow: auto; color: #D0D0D0;; line-height: 125%"><span style="color: #6ab825; font-weight: normal">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">"row display"</span><span style="color: #6ab825; font-weight: normal">&gt;</span>
-				<span style="color: #6ab825; font-weight: normal">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">"two columns push-ten"</span><span style="color: #6ab825; font-weight: normal">&gt;</span>
-					.two.columns		
-				<span style="color: #6ab825; font-weight: normal">&lt;/div&gt;</span>
-				<span style="color: #6ab825; font-weight: normal">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">"ten columns pull-two"</span><span style="color: #6ab825; font-weight: normal">&gt;</span>
-					.ten.columns (last)				
-				<span style="color: #6ab825; font-weight: normal">&lt;/div&gt;</span>
-			<span style="color: #6ab825; font-weight: normal">&lt;/div&gt;</span>
-
-
-			<span style="color: #6ab825; font-weight: normal">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">"row display"</span><span style="color: #6ab825; font-weight: normal">&gt;</span>
-				<span style="color: #6ab825; font-weight: normal">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">"seven columns push-five"</span><span style="color: #6ab825; font-weight: normal">&gt;</span>
-					.seven.columns				
-				<span style="color: #6ab825; font-weight: normal">&lt;/div&gt;</span>
-				<span style="color: #6ab825; font-weight: normal">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">"five columns pull-seven"</span><span style="color: #6ab825; font-weight: normal">&gt;</span>
-					.five.columns (last)			
-				<span style="color: #6ab825; font-weight: normal">&lt;/div&gt;</span>
-			<span style="color: #6ab825; font-weight: normal">&lt;/div&gt;</span>
-			</pre></div>
-
-			<div style="background-color: #111; color: #D0D0D0; float: right; padding: 5px 10px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; border-top-left-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; border-bottom-right-radius: 5px; font: 11px Arial,Sans-Serif; display: none; position: absolute; bottom: 0; right: 0;" id="snipt-33819">code hosted by <a href="http://snipt.net/smileyj68/source-ordering-in-foundation?key=460eb186c71df2e01b381b23423ad0d2" style="color: #0084FF; text-decoration: none;">snipt.net</a></div>
+			<div class="row display">
+				<div class="two columns">
+					.two.columns
+				</div>
+				<div class="eight columns">
+					.eight.columns
+				</div>
+				<div class="two columns">
+					.two.columns
+				</div>
 			</div>
-			<p></p>
-
-							<hr>
-
-							<h4>Mobile Grid</h4>
-							<p>The grid has two modes of adapting for small displays like phones. The first requires no work at all — the grid will linearize on a small device so your columns stack vertically. This is useful to quickly adapt a desktop layout to a simple scrolling mobile layout. The other option is to use some simple classes to implement a four-column phone grid.</p>
-
-							<h5>Four Column Mobile Grid</h5>
-							<p>When you're creating your layout you can optionally attach classes that take your existing grid elements and attach them to a four column phone grid.</p>
-
-							<div class="row display">
-								<div class="three phone-one columns">
-									.three.phone-one.columns				
-								</div>
-								<div class="nine phone-three columns">
-									.nine.phone-three.columns				
-								</div>
-							</div>
-							<div class="row display">
-								<div class="six phone-two columns">
-									.six.phone-two.columns		
-								</div>
-								<div class="six phone-two columns">
-									.six.phone-two.columns				
-								</div>
-							</div>
-							<div class="row display">
-								<div class="nine phone-three columns">
-									.nine.phone-three.columns				
-								</div>
-								<div class="three phone-one columns">
-									.three.phone-one.columns				
-								</div>
-							</div>
-
-							<script type="text/javascript" src="http://snipt.net/embed/65d7bb9f3cf79b366fa1c9e970892817"></script><div onmouseover="document.getElementById('snipt-32429').style.display = 'block'; return false;" onmouseout="document.getElementById('snipt-32429').style.display = 'none'; return false;" style="position: relative;">
-			<div class="highlight" style="background: #202020"><pre style="-moz-border-radius: 5px; border-radius: 5px; -webkit-border-radius: 5px; margin: 0; display: block; font: 11px Monaco, monospace !important; padding: 15px; background-color: #1C1C1C; overflow: auto; color: #D0D0D0;; line-height: 125%"><span style="color: #6ab825; font-weight: normal">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">"row display"</span><span style="color: #6ab825; font-weight: normal">&gt;</span>
-			  <span style="color: #6ab825; font-weight: normal">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">"three phone-one columns"</span><span style="color: #6ab825; font-weight: normal">&gt;</span>
-			    .three.phone-one.columns				
-			  <span style="color: #6ab825; font-weight: normal">&lt;/div&gt;</span>
-			  <span style="color: #6ab825; font-weight: normal">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">"nine phone-three columns"</span><span style="color: #6ab825; font-weight: normal">&gt;</span>
-			    .nine.phone-three.columns				
-			  <span style="color: #6ab825; font-weight: normal">&lt;/div&gt;</span>
-			<span style="color: #6ab825; font-weight: normal">&lt;/div&gt;</span>
-			</pre></div>
-
-			<div style="background-color: #111; color: #D0D0D0; float: right; padding: 5px 10px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; border-top-left-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; border-bottom-right-radius: 5px; font: 11px Arial,Sans-Serif; display: none; position: absolute; bottom: 0; right: 0;" id="snipt-32429">code hosted by <a href="http://snipt.net/smileyj68/mobile-four-column-grid" style="color: #0084FF; text-decoration: none;">snipt.net</a></div>
+			<div class="row display">
+				<div class="one columns">
+					.one
+				</div>
+				<div class="eleven columns">
+					.eleven.columns
+				</div>
 			</div>
-
-
-							<h5>Mobile Source Ordering</h5>
-							<p>You can use the same push and pull style classes on the 4 column phone grid. The syntax includes .pull-one-phone, .pull-two-phone, .pull-three-phone, as well as .push-one-phone, .push-two-phone, .push-three.phone.</p>
-
-
-						</div>
+			<div class="row display">
+				<div class="two columns">
+					.two.columns
+				</div>
+				<div class="ten columns">
+					.ten.columns
+				</div>
+			</div>
+			<div class="row display">
+				<div class="three columns">
+					.three.columns
+				</div>
+				<div class="nine columns">
+					.nine.columns
+				</div>
+			</div>
+			<div class="row display">
+				<div class="four columns">
+					.four.columns
+				</div>
+				<div class="eight columns">
+					.eight.columns
+				</div>
+			</div>
+			<div class="row display">
+				<div class="five columns">
+					.five
+				</div>
+				<div class="seven columns">
+					.seven.columns
+				</div>
+			</div>
+			<div class="row display">
+				<div class="six columns">
+					.six.columns
+				</div>
+				<div class="six columns">
+					.six.columns
+				</div>
+			</div>
+			<div class="row display">
+				<div class="seven columns">
+					.seven.columns
+				</div>
+				<div class="five columns">
+					.five.columns
+				</div>
+			</div>
+			<div class="row display">
+				<div class="eight columns">
+					.eight.columns
+				</div>
+				<div class="four columns">
+					.four.columns
+				</div>
+			</div>
+			<div class="row display">
+				<div class="nine columns">
+					.nine.columns
+				</div>
+				<div class="three columns">
+					.three.columns
+				</div>
+			</div>
+			<div class="row display">
+				<div class="ten columns">
+					.ten.columns
+				</div>
+				<div class="two columns">
+					.two.columns
+				</div>
+			</div>
+			<div class="row display">
+				<div class="eleven columns">
+					.eleven.columns
+				</div>
+				<div class="one columns">
+					.one
+				</div>
+			</div>
+			<div class="row display">
+				<div class="twelve columns">
+					.twelve.columns
+				</div>
+			</div>
+			<hr>
+			<h4>
+				Offsets
+			</h4>
+			<p>
+				Offsets allow you to create additional space between columns in a row. The offsets run from offset-by-one all the way up to offset-by-eleven. Like the rest of the grid they're nestable.
+			</p>
+			<div class="row display">
+				<div class="one columns">
+					.one
+				</div>
+				<div class="eleven columns">
+					.eleven.columns
+				</div>
+			</div>
+			<div class="row display">
+				<div class="one columns">
+					.one
+				</div>
+				<div class="ten columns offset-by-one">
+					.ten.columns.offset-by-one
+				</div>
+			</div>
+			<div class="row display">
+				<div class="one columns">
+					.one
+				</div>
+				<div class="nine columns offset-by-two">
+					.nine.columns.offset-by-two
+				</div>
+			</div>
+			<div class="row display">
+				<div class="one columns">
+					.one
+				</div>
+				<div class="eight columns offset-by-three">
+					.eight.columns.offset-by.three
+				</div>
+			</div>
+			<div class="row display">
+				<div class="seven columns offset-by-five">
+					.seven.columns.offset-by-five
+				</div>
+			</div>
+			<div class="row display">
+				<div class="six columns offset-by-six">
+					.six.columns.offset-by-six
+				</div>
+			</div>
+			<div class="row display">
+				<div class="five columns offset-by-seven">
+					.five.columns.offset-by-six
+				</div>
+			</div>
+			<div class="row display">
+				<div class="four columns offset-by-eight">
+					.four.columns.offset-by-eight
+				</div>
+			</div>
+			<hr>
+			<h4>
+				Centered Columns
+			</h4>
+			<p>
+				Centered columns are placed in the middle of the row. This does not center their content, but centers the grid element itself. This is a convenient way to make sure a block is centered, even if you change the number of columns it contains. Note: for this to work, there cannot be any other column blocks in the row.
+			</p>
+			<div class="row display">
+				<div class="one columns centered">
+					.one.columns.centered
+				</div>
+			</div>
+			<div class="row display">
+				<div class="two columns centered">
+					.two.columns.centered
+				</div>
+			</div>
+			<div class="row display">
+				<div class="three columns centered">
+					.three.columns.centered
+				</div>
+			</div>
+			<div class="row display">
+				<div class="four columns centered">
+					.four.columns.centered
+				</div>
+			</div>
+			<div class="row display">
+				<div class="five columns centered">
+					.five.columns.centered
+				</div>
+			</div>
+			<div class="row display">
+				<div class="six columns centered">
+					.six.columns.centered
+				</div>
+			</div>
+			<div class="row display">
+				<div class="seven columns centered">
+					.seven.columns.centered
+				</div>
+			</div>
+			<div class="row display">
+				<div class="eight columns centered">
+					.eight.columns.centered
+				</div>
+			</div>
+			<div class="row display">
+				<div class="nine columns centered">
+					.nine.columns.centered
+				</div>
+			</div>
+			<div class="row display">
+				<div class="ten columns centered">
+					.ten.columns.centered
+				</div>
+			</div>
+			<div class="row display">
+				<div class="eleven columns centered">
+					.eleven.columns.centered
+				</div>
+			</div>
+			<div class="row display">
+				<div class="twelve columns centered">
+					.twelve.columns.centered
+				</div>
+			</div>
+			<hr>
+			<h4>
+				Source Ordering
+			</h4>
+			<p>
+				Sometimes within the grid you want the order of your markup to not necessarily be the same as the order items are flowed into the grid. Using these source ordering classes you can shift columns around on desktops and tablets. On phones the grid will still be linearized into the order of the markup.
+			</p>
+			<div class="row display">
+				<div class="two columns push-ten">
+					.two.columns
+				</div>
+				<div class="ten columns pull-two">
+					.ten.columns (last)
+				</div>
+			</div>
+			<div class="row display">
+				<div class="three columns push-nine">
+					.three.columns
+				</div>
+				<div class="nine columns pull-three">
+					.nine.columns (last)
+				</div>
+			</div>
+			<div class="row display">
+				<div class="four columns push-eight">
+					.four.columns
+				</div>
+				<div class="eight columns pull-four">
+					.eight.columns (last)
+				</div>
+			</div>
+			<div class="row display">
+				<div class="five columns push-seven">
+					.five
+				</div>
+				<div class="seven columns pull-five">
+					.seven.columns (last)
+				</div>
+			</div>
+			<div class="row display">
+				<div class="six columns push-six">
+					.six.columns
+				</div>
+				<div class="six columns pull-six">
+					.six.columns (last)
+				</div>
+			</div>
+			<div class="row display">
+				<div class="seven columns push-five">
+					.seven.columns
+				</div>
+				<div class="five columns pull-seven">
+					.five.columns (last)
+				</div>
+			</div>
+			<div class="row display">
+				<div class="eight columns push-four">
+					.eight.columns
+				</div>
+				<div class="four columns pull-eight">
+					.four.columns (last)
+				</div>
+			</div>
+			<div class="row display">
+				<div class="nine columns push-three">
+					.nine.columns
+				</div>
+				<div class="three columns pull-nine">
+					.three.columns (last)
+				</div>
+			</div>
+			<div class="row display">
+				<div class="ten columns push-two">
+					.ten.columns
+				</div>
+				<div class="two columns pull-ten">
+					.two (last)
+				</div>
+			</div>The syntax supports push and pull for two to ten columns, and is added directly to the columns themselves.
+			<hr>
+			<h4>
+				Mobile Grid
+			</h4>
+			<p>
+				The grid has two modes of adapting for small displays like phones. The first requires no work at all — the grid will linearize on a small device so your columns stack vertically. This is useful to quickly adapt a desktop layout to a simple scrolling mobile layout. The other option is to use some simple classes to implement a four-column phone grid.
+			</p>
+			<h5>
+				Four Column Mobile Grid
+			</h5>
+			<p>
+				When you're creating your layout you can optionally attach classes that take your existing grid elements and attach them to a four column phone grid.
+			</p>
+			<div class="row display">
+				<div class="three phone-one columns">
+					.three.phone-one.columns
+				</div>
+				<div class="nine phone-three columns">
+					.nine.phone-three.columns
+				</div>
+			</div>
+			<div class="row display">
+				<div class="six phone-two columns">
+					.six.phone-two.columns
+				</div>
+				<div class="six phone-two columns">
+					.six.phone-two.columns
+				</div>
+			</div>
+			<div class="row display">
+				<div class="nine phone-three columns">
+					.nine.phone-three.columns
+				</div>
+				<div class="three phone-one columns">
+					.three.phone-one.columns
+				</div>
+			</div>
+			<h5>
+				Mobile Source Ordering
+			</h5>
+			<p>
+				You can use the same push and pull style classes on the 4 column phone grid. The syntax includes .pull-one-phone, .pull-two-phone, .pull-three-phone, as well as .push-one-phone, .push-two-phone, .push-three.phone.
+			</p>
 		</div>
-		
-		
-		
-		
-		<!-- Buttons -->
-		<div class="row">
-			<div class="twelve columns">
-							<h3>Buttons</h3>
-							<h4 class="subheader">We &lt;3 buttons. And so do you! That's why Foundation has multiple buttons styles and color that are not only badass out of the box, but easy to customize for your projects.</h4>
-							<hr>
-
-							<h4>Simple Buttons</h4>
-							<p>Foundation buttons have a number of parameters and styles - you can see a few examples below. The out of the box classes include size, color and style (square, slightly rounded, and completely rounded).</p>
-							<p><script src="http://snipt.net/embed/269a08f1db74949e80ee8b40351e609c"></script></p><div onmouseover="document.getElementById('snipt-22979').style.display = 'block'; return false;" onmouseout="document.getElementById('snipt-22979').style.display = 'none'; return false;" style="position: relative;">
-			<div class="highlight" style="background: #202020"><pre style="-moz-border-radius: 5px; border-radius: 5px; -webkit-border-radius: 5px; margin: 0; display: block; font: 11px Monaco, monospace !important; padding: 15px; background-color: #1C1C1C; overflow: auto; color: #D0D0D0;; line-height: 125%"><span style="color: #6ab825; font-weight: normal">&lt;a</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">"#"</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">"[small, medium, large] button"</span><span style="color: #6ab825; font-weight: normal">&gt;</span>Button Text<span style="color: #6ab825; font-weight: normal">&lt;/a&gt;</span>
-			<span style="color: #6ab825; font-weight: normal">&lt;a</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">"#"</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">"[radius, round] button"</span><span style="color: #6ab825; font-weight: normal">&gt;</span>Button Text<span style="color: #6ab825; font-weight: normal">&lt;/a&gt;</span>
-			<span style="color: #6ab825; font-weight: normal">&lt;a</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">"#"</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">"[white, blue, red, black] button"</span><span style="color: #6ab825; font-weight: normal">&gt;</span>Button Text<span style="color: #6ab825; font-weight: normal">&lt;/a&gt;</span>
-			</pre></div>
-
-			<div style="background-color: #111; color: #D0D0D0; float: right; padding: 5px 10px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; border-top-left-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; border-bottom-right-radius: 5px; font: 11px Arial,Sans-Serif; display: none; position: absolute; bottom: 0; right: 0;" id="snipt-22979">code hosted by <a href="http://snipt.net/smileyj68/simple-buttons-sizes?key=269a08f1db74949e80ee8b40351e609c" style="color: #0084FF; text-decoration: none;">snipt.net</a></div>
+	</div><!-- Buttons -->
+	<div class="row">
+		<div class="twelve columns">
+			<h3>
+				Buttons
+			</h3>
+			<h4 class="subheader">
+				We &lt;3 buttons. And so do you! That's why Foundation has multiple buttons styles and color that are not only badass out of the box, but easy to customize for your projects.
+			</h4>
+			<hr>
+			<h4>
+				Simple Buttons
+			</h4>
+			<p>
+				Foundation buttons have a number of parameters and styles - you can see a few examples below. The out of the box classes include size, color and style (square, slightly rounded, and completely rounded).
+			</p><br>
+			<div class="row">
+				<div class="six columns">
+					<a href="#" class="small blue button radius">Button »</a><br>
+					<br>
+					<a href="#" class="blue button radius">Button »</a><br>
+					<br>
+					<a href="#" class="large blue button radius">Button »</a><br>
+					<br>
+					<br>
+					<br>
+					<a href="#" class="small red button radius">Button »</a><br>
+					<br>
+					<a href="#" class="red button radius">Button »</a><br>
+					<br>
+					<a href="#" class="large red button radius">Button »</a><br>
+					<br>
+					<br>
+					<br>
+				</div>
+				<div class="six columns">
+					<a href="#" class="small white button radius">Button »</a><br>
+					<br>
+					<a href="#" class="white radius button">Button »</a><br>
+					<br>
+					<a href="#" class="large white button radius">Button »</a><br>
+					<br>
+					<br>
+					<br>
+					<a href="#" class="small black button radius">Button »</a><br>
+					<br>
+					<a href="#" class="black button radius">Button »</a><br>
+					<br>
+					<a href="#" class="large black button radius">Button »</a><br>
+					<br>
+					<br>
+					<br>
+				</div>
 			</div>
-			<p></p><br>
-							<div class="row">
-								<div class="six columns">
-									<a href="#" class="small blue button radius">Button »</a><br><br>
-									<a href="#" class="blue button radius">Button »</a><br><br>
-									<a href="#" class="large blue button radius">Button »</a><br><br>
-									<br><br>
-									<a href="#" class="small red button radius">Button »</a><br><br>
-									<a href="#" class="red button radius">Button »</a><br><br>
-									<a href="#" class="large red button radius">Button »</a><br><br>
-									<br><br>
-								</div>
-								<div class="six columns">
-									<a href="#" class="small white button radius">Button »</a><br><br>
-									<a href="#" class="white radius button">Button »</a><br><br>
-									<a href="#" class="large white button radius">Button »</a><br><br>
-									<br><br>
-									<a href="#" class="small black button radius">Button »</a><br><br>
-									<a href="#" class="black button radius">Button »</a><br><br>
-									<a href="#" class="large black button radius">Button »</a><br><br>
-									<br><br>
-								</div>
-							</div>		
-
-							<hr>
-
-							<h4>Nice Buttons</h4>
-							<p>Nice buttons have a little more pizazz using a background image, but they still support the same classes as any other button including color, size, and corner radius.</p>
-							<p><script type="text/javascript" src="http://snipt.net/embed/ac514168311a363dd4b5130a20cd1efb"></script></p><div onmouseover="document.getElementById('snipt-22980').style.display = 'block'; return false;" onmouseout="document.getElementById('snipt-22980').style.display = 'none'; return false;" style="position: relative;">
-			<div class="highlight" style="background: #202020"><pre style="-moz-border-radius: 5px; border-radius: 5px; -webkit-border-radius: 5px; margin: 0; display: block; font: 11px Monaco, monospace !important; padding: 15px; background-color: #1C1C1C; overflow: auto; color: #D0D0D0;; line-height: 125%"><span style="color: #6ab825; font-weight: normal">&lt;a</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">"#"</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">"nice small radius blue button"</span><span style="color: #6ab825; font-weight: normal">&gt;</span>Button Text<span style="color: #6ab825; font-weight: normal">&lt;/a&gt;</span>
-			</pre></div>
-
-			<div style="background-color: rgb(17, 17, 17); color: rgb(208, 208, 208); float: right; padding-top: 5px; padding-right: 10px; padding-bottom: 5px; padding-left: 10px; border-top-left-radius: 5px; border-bottom-right-radius: 5px; font: normal normal normal 11px/normal Arial, sans-serif; position: absolute; bottom: 0px; right: 0px; display: none; " id="snipt-22980">code hosted by <a href="http://snipt.net/smileyj68/nice-button-example?key=ac514168311a363dd4b5130a20cd1efb" style="color: #0084FF; text-decoration: none;">snipt.net</a></div>
+			<hr>
+			<h4>
+				Nice Buttons
+			</h4>
+			<p>
+				Nice buttons have a little more pizazz using a background image, but they still support the same classes as any other button including color, size, and corner radius.
+			</p><br>
+			<div class="row">
+				<div class="six columns">
+					<a href="#" class="small blue nice button radius">Button »</a><br>
+					<br>
+					<a href="#" class="blue nice button radius">Button »</a><br>
+					<br>
+					<a href="#" class="large blue nice button radius">Button »</a><br>
+					<br>
+					<br>
+					<br>
+					<a href="#" class="small red nice button radius">Button »</a><br>
+					<br>
+					<a href="#" class="red nice button radius">Button »</a><br>
+					<br>
+					<a href="#" class="large red nice button radius">Button »</a><br>
+					<br>
+					<br>
+					<br>
+				</div>
+				<div class="six columns">
+					<a href="#" class="small white nice button radius">Button »</a><br>
+					<br>
+					<a href="#" class="white radius nice button">Button »</a><br>
+					<br>
+					<a href="#" class="large white nice button radius">Button »</a><br>
+					<br>
+					<br>
+					<br>
+					<a href="#" class="small black nice button radius">Button »</a><br>
+					<br>
+					<a href="#" class="black nice button radius">Button »</a><br>
+					<br>
+					<a href="#" class="large black nice button radius">Button »</a><br>
+					<br>
+					<br>
+					<br>
+				</div>
 			</div>
-			<p></p><br>
-							<div class="row">
-								<div class="six columns">
-									<a href="#" class="small blue nice button radius">Button »</a><br><br>
-									<a href="#" class="blue nice button radius">Button »</a><br><br>
-									<a href="#" class="large blue nice button radius">Button »</a><br><br>
-									<br><br>
-									<a href="#" class="small red nice button radius">Button »</a><br><br>
-									<a href="#" class="red nice button radius">Button »</a><br><br>
-									<a href="#" class="large red nice button radius">Button »</a><br><br>
-									<br><br>
-								</div>
-								<div class="six columns">
-									<a href="#" class="small white nice button radius">Button »</a><br><br>
-									<a href="#" class="white radius nice button">Button »</a><br><br>
-									<a href="#" class="large white nice button radius">Button »</a><br><br>
-									<br><br>
-									<a href="#" class="small black nice button radius">Button »</a><br><br>
-									<a href="#" class="black nice button radius">Button »</a><br><br>
-									<a href="#" class="large black nice button radius">Button »</a><br><br>
-									<br><br>
-								</div>
-							</div>
-						</div>
 		</div>
-		
-		
 	</div>
-	<!-- container -->
+</div><!-- container -->
+
+
 
 
 
