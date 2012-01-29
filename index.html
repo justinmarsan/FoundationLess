@@ -26,7 +26,7 @@
 </head>
 <body>
 
-	<div class="container">
+<div class="container">
 	<!-- Grid -->
 	<div class="row">
 		<div class="twelve columns">
@@ -538,8 +538,838 @@
 				</div>
 			</div>
 		</div>
+	</div><!-- Forms -->
+	<div class="twelve columns">
+		<h3>
+			Forms
+		</h3>
+		<h4 class="subheader">
+			Forms are not a lot of fun. We've taken that lack of fun and dodged it with this ready-made code. In this release there are two sets of forms styles - basic and nice. Both are simple, both are flexible, both are easy to customize. <strong>Make sure to include app.js if you're going to use these forms.</strong>
+		</h4>
+		<hr>
+		<h4>
+			Forms
+		</h4>
+		<form>
+			<p>
+				Inputs support a number of different base classes. Any text input has a class of 'input-text' and supports several sizes:
+			</p><label>Standard Input</label> <input type="text" class="input-text"> <label>Small Input</label> <input type="text" class="small input-text"> <label>Medium Input</label> <input type="text" class="medium input-text"> <label>Large Input</label> <input type="text" class="large input-text"> <label>Oversize Input</label> <input type="text" class="oversize input-text">
+			<h5>
+				Inline Labels
+			</h5>
+			<p>
+				Inline labels are accomplished using the HTML5 Placeholder attribute, with a built-in JS fallback.
+			</p><input type="text" class="input-text" placeholder="Inline label">
+			<h5>
+				Error States
+			</h5>
+			<p>
+				Error states can be applied in two ways:
+			</p>
+			<ul class="disc">
+				<li>Using a wrapper for div.form-field.error, which will apply styles to text inputs, labels, and a small.error message (optional). This is ideal for programmatically generated forms.
+				</li>
+				<li>You can also apply the .red class to labels, inputs, and also append a small.error.
+				</li>
+			</ul>
+			<div class="form-field error">
+				<label>Medium Input (with wrapper)</label> <input type="text" class="medium input-text"> <small>Whoa, cowboy. Try that again.</small>
+			</div><label class="red">Medium Input</label> <input type="text" class="medium input-text red"> <small class="error">Whoa, cowboy. Try that again.</small> <label>Textarea</label> 
+			<textarea>
+This is a textarea
+</textarea> <label>Inline Label Textarea</label> 
+			<textarea placeholder="This is a text area">
+</textarea> <label for="checkbox1"><input type="checkbox" id="checkbox1"> Label for Checkbox</label> <label for="radio1"><input type="radio" id="radio1"> Label for Radio</label> <label>Dropdown Label</label> <select>
+				<option>
+					This is a dropdown
+				</option>
+				<option>
+					This is another option
+				</option>
+				<option>
+					Look, a third option
+				</option>
+			</select>
+			<div class="row">
+				<div class="seven columns">
+					<fieldset>
+						<h5>
+							Fieldset Header H2
+						</h5>
+						<p>
+							This is a paragraph within a fieldset.
+						</p><label>Standard Input</label> <input type="text" class="input-text">
+					</fieldset>
+				</div>
+			</div>
+		</form>
+		<hr>
+		<h4>
+			Nice Forms
+		</h4>
+		<form class="nice">
+			<p>
+				Changing the form style to a slightly fancier version is dead simple - just add a class of 'nice' to the form itself.
+			</p><label>Standard Input</label> <input type="text" class="input-text"> <input type="text" placeholder="Inline label" class="input-text"> <label>Small Input</label> <input type="text" class="small input-text">
+			<div class="form-field error">
+				<label>Medium Input (with wrapper)</label> <input type="text" class="medium input-text"> <small>Whoa, cowboy. Try that again.</small>
+			</div><label class="red">Medium Input</label> <input type="text" class="medium red input-text"> <small class="error">Whoa, cowboy. Try that again.</small> <label>Large Input</label> <input type="text" class="large input-text"> <label>Oversize Input</label> <input type="text" class="oversize input-text"> <label>Textarea</label> 
+			<textarea>
+This is a textarea
+</textarea> <label>Inline Label Textarea</label> 
+			<textarea placeholder="This is a text area">
+</textarea> <label for="checkbox1"><input type="checkbox" id="checkbox1"> Label for Checkbox</label> <label for="radio1"><input type="radio" id="radio1"> Label for Radio</label> <label>Dropdown Label</label> <select>
+				<option>
+					This is a dropdown
+				</option>
+				<option>
+					This is another option
+				</option>
+				<option>
+					Look, a third option
+				</option>
+			</select>
+			<div class="row">
+				<div class="seven columns">
+					<fieldset>
+						<h5>
+							Fieldset Header H2
+						</h5>
+						<p>
+							This is a paragraph within a fieldset.
+						</p><label>Standard Input</label> <input type="text" class="input-text">
+					</fieldset>
+				</div>
+			</div>
+		</form>
+		<hr>
+		<h3>
+			Custom Forms
+		</h3>
+		<form class="custom">
+			<p>
+				Creating easy to style custom form elements is so crazy easy, it's practically a crime. Just add a class of 'custom' to a form and, if you want, forms.jquery.js will do everything for you.
+			</p>
+			<p>
+				The Foundation forms js will look for any checkbox, radio button, or select element and replace it with custom markup that is already styled with forms.css.
+			</p>
+			<p>
+				If you want to avoid a potential flash (waiting for js to load and replace your default elements) you can supply the custom markup as part of the page, and the js will instead simply map the custom elements to the inputs.
+			</p>
+			<p>
+				Foundation custom forms will even correctly respect and apply default states for radio, checkbox and select elements. You can use the 'checked' or 'selected' properties just like normal, and the js will apply that as soon as the page loads.
+			</p>
+			<h5>
+				Radio Buttons
+			</h5>
+			<h5>
+				Checkboxes
+			</h5>
+			<div class="row">
+				<div class="four columns">
+					<label for="radio1"><input name="radio1" type="radio" id="radio1" style="display: none;"> Radio Button 1</label> <label for="radio2"><input name="radio1" type="radio" id="radio2" style="display: none;"> Radio Button 2</label> <label for="radio3"><input name="radio1" type="radio" id="radio3" style="display: none;"> Radio Button 3</label>
+				</div>
+				<div class="four columns">
+					<label for="radio4"><input name="radio2" type="radio" id="radio4" style="display: none;"> Radio Button 1</label> <label for="radio5"><input name="radio2" checked type="radio" id="radio5" style="display: none;"> Radio Button 2</label> <label for="radio6"><input name="radio2" type="radio" id="radio6" style="display: none;"> Radio Button 3</label>
+				</div>
+				<div class="four columns">
+					<label for="checkbox1"><input type="checkbox" id="checkbox1" style="display: none;"> Label for Checkbox</label> <label for="checkbox2"><input type="checkbox" id="checkbox2" checked style="display: none;"> Label for Checkbox</label> <label for="checkbox3"><input type="checkbox" checked id="checkbox3" style="display: none;"> Label for Checkbox</label>
+				</div>
+			</div>
+			<h5>
+				Dropdown / Select Elements
+			</h5><label>Dropdown Label</label> <select style="display:none;">
+				<option selected>
+					This is a dropdown
+				</option>
+				<option>
+					This is another option
+				</option>
+				<option>
+					Look, a third option
+				</option>
+			</select>
+			<div class="custom dropdown" style="width: 187px;">
+				<a href="#" class="current">This is a dropdown</a> <a href="#" class="selector"></a>
+				<ul style="width: 185px;">
+					<li class="selected">This is a dropdown
+					</li>
+					<li>This is another option
+					</li>
+					<li>Look, a third option
+					</li>
+				</ul>
+			</div><label>Dropdown Label</label> <select style="display: none;">
+				<option>
+					This is a dropdown
+				</option>
+				<option selected>
+					This is another option
+				</option>
+				<option>
+					Look, a third option
+				</option>
+			</select>
+			<div class="custom dropdown" style="width: 187px;">
+				<a href="#" class="current">This is another option</a><a href="#" class="selector"></a>
+				<ul style="width: 185px;">
+					<li>This is a dropdown
+					</li>
+					<li class="selected">This is another option
+					</li>
+					<li>Look, a third option
+					</li>
+				</ul>
+			</div>
+		</form>
+		<h5>
+			Adding Custom Forms with JavaScript
+		</h5>
+		<p>
+			If you are creating these custom forms using JavaScript (via AJAX, JavaScript templates or whatever), you will also need to create the custom markup that Foundation typically creates for you.
+		</p>
+		<p>
+			Foundation detects any custom forms when the document has loaded and adds the custom markup required to make the forms pretty. However if you are adding these forms after the document has loaded, Foundation does not know to append this markup.
+		</p>
+		<p>
+			All the custom forms events are bound using jQuery.fn.on(), so you don't need to worry about event handlers not being bound to new elements.
+		</p>
+	</div><!-- Layout -->
+	<div class="twelve columns">
+		<h3>
+			Layout
+		</h3>
+		<h4 class="subheader">
+			Reusable, easy to modify layout conventions, for when the Grid isn't quite enough.
+		</h4>
+		<hr>
+		<h4>
+			Mobile Visibility
+		</h4>
+		<p>
+			With Foundation 2.0 we've included various mobile visibility affordance classes. Want to hide something on phones, or show it only on tablets? Got you covered.
+		</p>
+		<p>
+			For example, the following text should describe the device you're using: <strong class="show-on-desktops">You are on a desktop machine.</strong> <strong class="show-on-tablets">You are on a tablet device.</strong> <strong class="show-on-phones">You are on a smartphone like an iPhone or Android phone.</strong>
+		</p>
+		<p>
+			That example uses the 'show-on-x' classes seen here:
+		</p>
+		<p>
+			This example uses the opposite rules, so the following text should describe the device you're using: <strong class="hide-on-desktops">You are not on a desktop machine.</strong> <strong class="hide-on-tablets">You are not on a tablet device.</strong> <strong class="hide-on-phones">You are not on a smartphone like an iPhone or Android phone.</strong>
+		</p>
+		<p>
+			Each of these classes have an implied 'only' as in 'show <strong>only</strong> on tablet' or 'hide <strong>only</strong> on phones'.
+		</p>
+		<hr>
+		<h4>
+			Block Grids
+		</h4>
+		<p>
+			Block grids are ULs with 2-up, 3-up, 4-up and 5-up styles. These are ideal for blocked-in content generated by an application, as they do not require rows or even numbers of elements to display correctly.
+		</p>
+		<p>
+			By default these blocks will stay in their N-up configuration on mobile devices, but you can add a class of 'mobile' to have them reshuffle on smartphones into one element per line, just like the Grid.
+		</p>
+		<h5>
+			Two-up
+		</h5>
+		<ul class="block-grid two-up">
+			<li>Two-up element
+			</li>
+			<li>Two-up element
+			</li>
+			<li>Two-up element
+			</li>
+			<li>Two-up element
+			</li>
+			<li>Two-up element
+			</li>
+		</ul>
+		<h5>
+			Three-up
+		</h5>
+		<ul class="block-grid three-up">
+			<li>Three-up element
+			</li>
+			<li>Three-up element
+			</li>
+			<li>Three-up element
+			</li>
+			<li>Three-up element
+			</li>
+			<li>Three-up element
+			</li>
+		</ul>
+		<h5>
+			Four-up (Mobile)
+		</h5>
+		<ul class="block-grid mobile four-up">
+			<li>Four-up element
+			</li>
+			<li>Four-up element
+			</li>
+			<li>Four-up element
+			</li>
+			<li>Four-up element
+			</li>
+			<li>Four-up element
+			</li>
+			<li>Four-up element
+			</li>
+		</ul>
+		<h5>
+			Five-up
+		</h5>
+		<ul class="block-grid five-up">
+			<li>Five-up element
+			</li>
+			<li>Five-up element
+			</li>
+			<li>Five-up element
+			</li>
+			<li>Five-up element
+			</li>
+			<li>Five-up element
+			</li>
+			<li>Five-up element
+			</li>
+			<li>Five-up element
+			</li>
+		</ul>
+	</div><!-- UI -->
+	<div class="six columns">
+		<h3>
+			UI Elements
+		</h3>
+		<h4 class="subheader">
+			Need tabs, tables, or other common UI elements?<br>
+			Yeah, we got that.
+		</h4>
+		<hr>
+		<h4>
+			Alerts
+		</h4>
+		<p>
+			Alerts are a handy element you can drop into a form or inline on a page to communicate success, warnings, failure or just information. The syntax is extremely simple and like anything else in Foundation, easy to customize.
+		</p>
+		<div class="alert-box">
+			This is a standard alert (div.alert-box). <a href="" class="close">×</a>
+		</div>
+		<div class="alert-box success">
+			This is a success alert (div.alert-box.success). <a href="" class="close">×</a>
+		</div>
+		<div class="alert-box warning">
+			This is a warning alert (div.alert-box.warning). <a href="" class="close">×</a>
+		</div>
+		<div class="alert-box error">
+			This is an error alert (div.alert-box.error). <a href="" class="close">×</a>
+		</div>
+		<hr>
+		<h4>
+			Labels
+		</h4>
+		<p>
+			Labels are useful inline styles that can be dropped into body copy to call out certain sections or to attach metadata. Examples might be noting when something was updated or that something is new. The syntax is simple, just a <code>span</code> element with a class of .label. The border styling mirrors that of the Foundation buttons.
+		</p>
+		<div class="row">
+			<div class="three columns phone-two">
+				<p>
+					<span class="label">Regular Label</span><br>
+					<br>
+					<span class="radius label">Radius Label</span><br>
+					<br>
+					<span class="round label">Round Label</span>
+				</p>
+			</div>
+			<div class="three columns phone-two">
+				<p>
+					<span class="blue radius label">Blue Label</span><br>
+					<br>
+					<span class="red radius label">Red Label</span><br>
+					<br>
+					<span class="black radius label">Black Label</span><br>
+					<br>
+					<span class="green radius label">Green Label</span><br>
+					<br>
+					<span class="white radius label">White Label</span>
+				</p>
+			</div>
+		</div>
+		<p>
+			<span class="radius label">Added 01/19</span> This paragraph has an inline label to let you know that it was added on January 19, 2012 courtesy of Thomas Klemm. Thanks man!
+		</p>
+		<hr>
+		<h4>
+			Tooltips
+		</h4>
+		<p>
+			Tooltips are a quick way to provide extended information on a term or action on a page. They work cross browser and cross platfrom and are easily added to a page by including the jquery.tooltip.js plugin. You can apply the <strong>has-tip</strong> class to any element, as long as you assign it a unique ID.
+		</p>
+		<p>
+			By default the tooltip takes the width of the element that it is applied to, but you can override this behavior by applying a <strong>data-width</strong> attribute to the target element. The tooltip takes on the content of the targets <strong>title</strong> attribute.
+		</p>
+		<p>
+			The tooltips can be positioned <span class="has-tip top radius" id="tipTop" data-width="210" title="I'm on the top and rounded!">top</span>, <span class="has-tip" id="tipDefault" data-width="210" title="I'm on bottom and the default position.">bottom</span>, <span class="has-tip left" id="tipLeft" data-width="90" title="I'm on the left!">left</span>, or <span class="has-tip right" id="tipRight" data-width="90" title="I'm on the right!">right</span> of the target element.In a mobile environment the tooltips are full width and bottom aligned.
+		</p>
+		<hr>
+		<h4>
+			Panels
+		</h4>
+		<p>
+			A panel is a simple, helpful css class that enables you to outline sections of your page easily. This allows you to view your page sections as you add content to them, or add emphasis to a section (for example the download box on the right).
+		</p>
+		<div class="panel">
+			<h5>
+				My panel is bigger than yours.
+			</h5>
+			<p>
+				Seriously, just look at this sweet panel.
+			</p>
+		</div>
+		<hr>
+		<h4>
+			Tabs
+		</h4>
+		<div class="row">
+			<div class="six columns">
+				<p>
+					Tabs are very versatile both as organization and navigational constructs. To keep things easy for everyone we've created two main tab styles (simple and nice) as well as two variants of each - open and contained. With the base Foundation package, tabs of a particular format are actually already hooked up - no extra work required.
+				</p>
+			</div>
+			<div class="six columns">
+				<p>
+					Tabs are made of <strong>two objects:</strong> a DL object containing the tabs themselves, and a UL object containing the tab content. If you simply want visual tabs (as seen in this documentation) without the on-page hookup, you only need the DL. If you want functional tabs, just be sure that each tab is linked to an ID, and that the corresponding tab has an ID of tabnameTab. Check out these examples.
+				</p>
+			</div>
+		</div>
+		<p>
+			<em>Note: The third tab is using the <a href="layout.php">mobile visibility classes</a> to hide on small devices.</em>
+		</p>
+		<h5>
+			Simple Tabs
+		</h5>
+		<dl class="tabs">
+			<dd>
+				<a href="#simple1" class="active">Simple Tab 1</a>
+			</dd>
+			<dd>
+				<a href="#simple2">Simple Tab 2</a>
+			</dd>
+			<dd class="hide-on-phones">
+				<a href="#simple3">Simple Tab 3</a>
+			</dd>
+		</dl>
+		<ul class="tabs-content">
+			<li class="active" id="simple1Tab">This is simple tab 1's content. Pretty neat, huh?
+			</li>
+			<li id="simple2Tab">This is simple tab 2's content. Now you see it!
+			</li>
+			<li id="simple3Tab">This is simple tab 3's content. It's only okay.
+			</li>
+		</ul>
+		<hr>
+		<h5>
+			Contained Tabs
+		</h5>
+		<p>
+			Contained tabs have a simple added class of 'contained' on the tabs-content element. What that means is the tab content has a border around it tying it to the tabs, and the padding on that container (by default) is one column on each side. That means you can still use standard column sizes inside a tab element.
+		</p>
+		<dl class="tabs contained">
+			<dd>
+				<a href="#simpleContained1" class="active">Simple Tab 1</a>
+			</dd>
+			<dd>
+				<a href="#simpleContained2">Simple Tab 2</a>
+			</dd>
+			<dd class="hide-on-phones">
+				<a href="#simpleContained3">Simple Tab 3</a>
+			</dd>
+		</dl>
+		<ul class="tabs-content contained">
+			<li class="active" id="simpleContained1Tab">This is simple tab 1's content. Pretty neat, huh?
+			</li>
+			<li id="simpleContained2Tab">This is simple tab 2's content. Now you see it!
+			</li>
+			<li id="simpleContained3Tab">This is simple tab 3's content. It's only okay.
+			</li>
+		</ul>
+		<hr>
+		<h5>
+			Nice Tabs
+		</h5>
+		<p>
+			Need something a little fancier? Nice tabs have some sweet default styling and can add a little polish to a prototype (or documentation). They can be both standard and contained, just like the simple tabs.
+		</p>
+		<dl class="nice contained tabs">
+			<dd>
+				<a href="#nice1" class="active">Nice Tab 1</a>
+			</dd>
+			<dd>
+				<a href="#nice2">Nice Tab 2</a>
+			</dd>
+			<dd class="hide-on-phones">
+				<a href="#nice3">Nice Tab 3</a>
+			</dd>
+		</dl>
+		<ul class="nice tabs-content contained">
+			<li class="active" id="nice1Tab">This is nice tab 1's content. Pretty neat, huh?
+			</li>
+			<li id="nice2Tab">This is nice tab 2's content. Now you see it!
+			</li>
+			<li id="nice3Tab">This is simple tab 3's content. It's only okay.
+			</li>
+		</ul>
+		<hr>
+		<h5>
+			Vertical Tabs
+		</h5>
+		<p>
+			You can also use tabs in a vertical configuration by adding a class of 'vertical' to the DL element. These are great for more scalable nav, and you can see how they work on this page on a tablet or desktop.
+		</p>
+		<dl class="nice vertical tabs">
+			<dd>
+				<a href="#vertical1" class="active">Vertical Tab 1</a>
+			</dd>
+			<dd>
+				<a href="#vertical2">Vertical Tab 2</a>
+			</dd>
+			<dd>
+				<a href="#vertical3">Vertical Tab 3</a>
+			</dd>
+		</dl>
+		<hr>
+		<h5>
+			Mobile Tabs
+		</h5>
+		<p>
+			To demonstrate how mobile navigation can work, adding a class of 'mobile' to a tab group will switch them (at small resolutions) to full width nav bars.
+		</p>
+		<hr>
+		<h4>
+			Nav Bar
+		</h4>
+		<p>
+			If you need a more traditional nav bar with dropdowns, you can use this sucka. The dropdowns are optional - omitting the flyout element and .has-flyout class means it will act as a standard link. The flyouts can hold arbitrary content, including grid objects, and have three sizes (.small, standard, and .large).
+		</p>
+		<p>
+			<em>Note: In IE7 the dropdowns are obscured by the code snippet below. This is due to IE7s iframe z-index bug, and is not an issue with the dropdowns themselves. Try not to have dropdown elements over an iframe.</em>
+		</p>
+		<ul class="nav-bar">
+			<li>
+				<a href="#" class="main">Nav Item 1</a>
+			</li>
+			<li class="has-flyout">
+				<a href="#" class="main">Nav Item 2</a> <a href="#" class="flyout-toggle"></a>
+				<div class="flyout small">
+					<h5>
+						Small Example (200px)
+					</h5>
+					<p>
+						This is example text. This is example text. This is example text. This is example text. This is example text. This is example text. This is example text. This is example text.
+					</p>
+				</div>
+			</li>
+			<li class="has-flyout">
+				<a href="#" class="main">Nav Item 3</a> <a href="#" class="flyout-toggle"></a>
+				<div class="flyout">
+					<div class="row">
+						<div class="twelve columns">
+							<h5>
+								Medium Example (400px)
+							</h5>
+							<div class="row">
+								<div class="six columns">
+									<p>
+										This is example text. This is example text. This is example text. This is example text. This is example text. This is example text. This is example text. This is example text.
+									</p>
+								</div>
+								<div class="six columns">
+									<p>
+										This is example text. This is example text. This is example text. This is example text. This is example text. This is example text. This is example text. This is example text.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="has-flyout hide-on-tablets">
+				<a href="#" class="main">Nav Item 4</a> <a href="#" class="flyout-toggle"></a>
+				<div class="flyout large right">
+					<div class="row">
+						<div class="twelve columns">
+							<h5>
+								Large Example (600px)
+							</h5>
+							<div class="row">
+								<div class="four columns">
+									<p>
+										This is example text. This is example text. This is example text. This is example text. This is example text. This is example text. This is example text. This is example text.
+									</p>
+									<p>
+										This is example text. This is example text. This is example text. This is example text. This is example text. This is example text. This is example text. This is example text.
+									</p>
+								</div>
+								<div class="four columns">
+									<p>
+										This is example text. This is example text. This is example text. This is example text. This is example text. This is example text. This is example text. This is example text.
+									</p>
+									<p>
+										This is example text. This is example text. This is example text. This is example text. This is example text. This is example text. This is example text. This is example text.
+									</p>
+								</div>
+								<div class="four columns">
+									<img src="http://placehold.it/200x250">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<p>
+			You can also drop inputs into the nav in place of an anchor. Here you can see a search input.
+		</p>
+		<ul class="nav-bar">
+			<li>
+				<input type="search">
+			</li>
+			<li class="has-flyout">
+				<a href="" class="main">Nav Element</a> <a href="http://www.zurb.com" class="flyout-toggle"></a>
+				<div class="flyout">
+					<ul>
+						<li>
+							<a href="">This is a link in a UL.</a>
+						</li>
+						<li>
+							<a href="">This is a link in a UL.</a>
+						</li>
+						<li>
+							<a href="">This is a link in a UL.</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+		<hr>
+		<h4>
+			Sub Nav
+		</h4>
+		<p>
+			If you need to provide simple and effective on-page navigation, to either jump to content on the page or flip to another view then use this awesome little sub-nav.
+		</p>
+		<dl class="sub-nav">
+			<dt>
+				Filter:
+			</dt>
+			<dd class="active">
+				<a href="#">All</a>
+			</dd>
+			<dd>
+				<a href="#">Active</a>
+			</dd>
+			<dd>
+				<a href="#">Pending</a>
+			</dd>
+			<dd>
+				<a href="#">Suspended</a>
+			</dd>
+		</dl>
+		<hr>
+		<h4>
+			Pagination
+		</h4>
+		<p>
+			Breaking stuff up into pages? Yeah you are. Here's some pagination to get you started.
+		</p>
+		<ul class="pagination">
+			<li class="unavailable">
+				<a href="">«</a>
+			</li>
+			<li class="current">
+				<a href="">1</a>
+			</li>
+			<li>
+				<a href="">2</a>
+			</li>
+			<li>
+				<a href="">3</a>
+			</li>
+			<li>
+				<a href="">4</a>
+			</li>
+			<li class="unavailable">
+				<a href="">…</a>
+			</li>
+			<li>
+				<a href="">12</a>
+			</li>
+			<li>
+				<a href="">13</a>
+			</li>
+			<li>
+				<a href="">»</a>
+			</li>
+		</ul>
+		<hr>
+		<h4>
+			Tables
+		</h4>
+		<p>
+			Okay, they're not the sexiest things ever, but tables get the job done (for tabular data).
+		</p>
+		<table>
+			<thead>
+				<tr>
+					<th>
+						Table Header
+					</th>
+					<th>
+						Table Header
+					</th>
+					<th>
+						Table Header
+					</th>
+					<th>
+						Table Header
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						Content
+					</td>
+					<td>
+						This is longer content
+					</td>
+					<td>
+						Content
+					</td>
+					<td>
+						Content
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Content
+					</td>
+					<td>
+						This is longer content
+					</td>
+					<td>
+						Content
+					</td>
+					<td>
+						Content
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Content
+					</td>
+					<td>
+						This is longer content
+					</td>
+					<td>
+						Content
+					</td>
+					<td>
+						Content
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Content
+					</td>
+					<td>
+						This is longer content
+					</td>
+					<td>
+						Content
+					</td>
+					<td>
+						Content
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<hr>
+		<h4>
+			Video
+		</h4>
+		<p>
+			If you're embedding video from YouTube, Vimeo, or another site that uses iframe, embed or object elements you can wrap your video in <code>div.flex-video</code> to create an intrinsic ratio that will properly scale your video on any device.
+		</p>
+		<dl class="tabs contained">
+			<dd>
+				<a href="#video1" class="active">4:3</a>
+			</dd>
+			<dd>
+				<a href="#video2">Widescreen</a>
+			</dd>
+			<dd>
+				<a href="#video3">Vimeo</a>
+			</dd>
+		</dl>
+		<ul class="tabs-content contained">
+			<li class="active" id="video1Tab">
+				<div class="flex-video">
+					<iframe width="420" height="315" src="http://www.youtube.com/embed/9otNWTHOJi8" frameborder="0" allowfullscreen=""></iframe>
+				</div>4:3 is the default size for the .flex-video element, and the assumption for .flex-video for chrome (controls) height is based on YouTube.
+			</li>
+			<li id="video2Tab">
+				<div class="flex-video widescreen">
+					<iframe width="560" height="315" src="http://www.youtube.com/embed/N966cATFWjI" frameborder="0" allowfullscreen=""></iframe>
+				</div>By adding a class of .widescreen we change the ratio to 16:9, ideal for more recent video and most popular YouTube or Vimeo embeds.
+			</li>
+			<li id="video3Tab">
+				<div class="flex-video widescreen vimeo">
+					<iframe src="http://player.vimeo.com/video/21762736?title=0&amp;byline=0&amp;portrait=0" width="400" height="225" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+				</div>Because Vimeo places their chrome on the player itself, adding a class of .vimeo creates a container that is sized for the video only - no extra padding for the controls.
+			</li>
+		</ul>
+		<hr>
+		<h4>
+			Microformats
+		</h4>
+		<p>
+			Microformats are formats for data objects represented on the page using standard HTML. By applying specific classes to objects parsers like the operator plugin can detect relevant data and display it. This can be especially handy for contact info, events, locations and news articles. We've supplied some base styling for microformats, as well as the relevant markup.
+		</p>
+		<h5>
+			hCard
+		</h5>
+		<p>
+			hCards are a microformat for contact information. We've represented the correct syntax here to ensure they are machine readable, as well as applied some minimal styling.
+		</p>
+		<ul class="vcard">
+			<li class="fn">John T. Yeti
+			</li>
+			<li class="nickname">Yeti
+			</li>
+			<li class="org">Foundation, Inc.
+			</li>
+			<li class="tel">
+				<a href="tel:408-867-5309">408-867-5309</a>
+			</li>
+			<li>
+				<a class="url" href="http://foundation.zurb.com/">http://foundation.zurb.com/</a>
+			</li>
+		</ul>
+		<h5>
+			hCalendar
+		</h5>
+		<p>
+			An hCalendar event is an iCalendar formatted entry for an event at a specific time and location. This can be interpreted by parsing tools to recognize events and add them to a calendar.
+		</p>
+		<p class="vevent">
+			The <span class="summary">Foundation Launch Party</span> was on October 13 2011 from <abbr class="dtstart" title="2011-10-13T14:00:00+06:00">2</abbr>–<abbr class="dtend" title="2011-10-13T16:00:00+06:00">4</abbr>pm at <span class="location">ZURB HQ</span> (<a class="url" href="http://foundation.zurb.com">More Info</a>)
+		</p>
 	</div>
 </div><!-- container -->
+
+
 
 
 
