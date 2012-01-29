@@ -16,8 +16,13 @@ Variables and mixins to bootstrap any new web development project.
 -------------------------------------------------- */
 
 // Links
-@linkColor:         #8b59c2;
-@linkColorHover:    darken(@linkColor, 10);
+@linkColor:         #2a85e8;
+@linkColorHover:    #11639d;
+@linkColorFocus:	#cc4714;
+
+// General
+@backgroundColor:	#fff;
+@textColor:			#555;
 
 // Grays
 @white:             #fff;
@@ -28,16 +33,14 @@ Variables and mixins to bootstrap any new web development project.
 @black:             #000;
 
 // Accent Colors
-@blue:              #08b5fb;
-@green:             #46a546;
-@red:               #9d261d;
-@yellow:            #ffc40d;
-@orange:            #f89406;
-@pink:              #c3325f;
-@purple:            #7a43b6;
+@firstColor:		#00A6FC;
+@secondColor:		#E91C21;
+@thirdColor:		#E9E9E9;
+@fourthColor:		#141414;
 
 // Baseline grid
-@baseline:          20px;
+@baseline:          18px;
+@baseSize:			13px;
 
 // Griditude
 @gridColumns:       16;
@@ -55,3 +58,9 @@ Mixins
 Reset
 ---------- */
 @import "reset.less";
+
+
+/* ----------
+Typography
+---------- */
+@import "typography.less";
